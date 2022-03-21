@@ -1,13 +1,14 @@
-#ifndef HUMAN_H
-#define HUMAN_H
+#ifndef Human_H
+#define Human_H
+#include "Player.h"
+#include <vector>
+using namespace std;
 
-class Human
+class Human : public Player 
 {
-    private:
-        char choice;
     public:
-        char getMove();
-        void makeMove();
+        Human();
+        string performMove();
+        ~Human();
 };
-
 #endif
